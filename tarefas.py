@@ -28,18 +28,18 @@ def concluir(): #funcao para marcar como concluido uma tarefa da lista pendente.
     print(f'tarefa concluida com sucesso!')
     sleep(1)
 
-def remover():
+def remover(): #funcao para remover uma terega da lista.
     id = int(input('Digite o numero da tarefa que deseja Excluir: '))
     del lista_pendente[id]
     print('Tarefa Excluida com sucesso!!')
 
 
-def exibir():
+def exibir(): #funcao para exibir as listas em ordem.
     print('Tarefas pendentes:')
-    for pos, tarefas in enumerate(lista_pendente):
+    for pos, tarefas in enumerate(lista_pendente): #for para listar todos os intem da tabela pela sua posiçao.
         print(f'Tarefa{pos+1} : {tarefas}')
     print()
     print('Tarefas Concluidas:')
-    for pos, tarefas in enumerate(lista_concluida):
+    for pos, tarefas in enumerate(lista_concluida):# listar todos os itens da lista tarefas concluidas cada um em sua posição.
         print(f'Tarefa{pos+1} : {tarefas}' )
     print()
